@@ -1,4 +1,4 @@
-package com.bancopt.utilizadores;
+package com.bancopt.utilizadores.dados;
 
 /**
  * Enumeração dos paises que permitem utilizadores

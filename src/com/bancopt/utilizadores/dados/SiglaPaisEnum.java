@@ -1,4 +1,4 @@
-package com.bancopt.utilizadores;
+package com.bancopt.utilizadores.dados;
 
 /**
  * Enumeração das siglas do pais

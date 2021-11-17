@@ -5,5 +5,6 @@ package com.bancopt.contas;
  */
 enum TipoContaEnum {
     Ordem,
-    Poupança
+    Poupança,
+    Investimento
 }
