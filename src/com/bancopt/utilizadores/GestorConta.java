@@ -4,7 +4,7 @@ import com.bancopt.contas.Conta;
 import com.bancopt.utilizadores.dados.Contacto;
 import com.bancopt.utilizadores.dados.Morada;
 import com.bancopt.utilizadores.dados.Nacionalidade;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -12,10 +12,21 @@ import java.util.List;
  */
 public class GestorConta extends Utilizador {
 
-    private List<Conta> listClientes;
+    private List<Cliente> listClientes;
 
-    public GestorConta(List<Conta> listClientes, String nome, Date dataNascimento, Morada morada, Nacionalidade nacionalidade, Contacto contacto, String nif, TipoUtilizadorEnum tipoUtilizador) {
+    public GestorConta() {
+    }
+
+    public GestorConta(List<Cliente> listClientes, String nome, LocalDate dataNascimento, Morada morada, Nacionalidade nacionalidade, Contacto contacto, String nif, TipoUtilizadorEnum tipoUtilizador) {
         super(nome, dataNascimento, morada, nacionalidade, contacto, nif, tipoUtilizador);
+        this.listClientes = listClientes;
+    }
+
+    public List<Cliente> getListClientes() {
+        return listClientes;
+    }
+
+    public void setListClientes(List<Cliente> listClientes) {
         this.listClientes = listClientes;
     }
 

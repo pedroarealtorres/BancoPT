@@ -1,6 +1,6 @@
 package com.bancopt.operacoes;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  * Operação de uma conta
@@ -10,13 +10,13 @@ public class Operacao {
     private String nome;
     private TipoOperacaoEnum tipo;
     private Double montante;
-    private Date dataOperacao;
-    private int ibanDestino;
+    private LocalDate dataOperacao;
+    private String ibanDestino;
 
     public Operacao() {
     }
 
-    public Operacao(String nome, TipoOperacaoEnum tipo, Double montante, Date dataOperacao, int ibanDestino) {
+    public Operacao(String nome, TipoOperacaoEnum tipo, Double montante, LocalDate dataOperacao, String ibanDestino) {
         this.nome = nome;
         this.tipo = tipo;
         this.montante = montante;
@@ -48,19 +48,19 @@ public class Operacao {
         this.montante = montante;
     }
 
-    public Date getDataOperacao() {
+    public LocalDate getDataOperacao() {
         return dataOperacao;
     }
 
-    public void setDataOperacao(Date dataOperacao) {
+    public void setDataOperacao(LocalDate dataOperacao) {
         this.dataOperacao = dataOperacao;
     }
 
-    public int getIbanDestino() {
+    public String getIbanDestino() {
         return ibanDestino;
     }
 
-    public void setIbanDestino(int ibanDestino) {
+    public void setIbanDestino(String ibanDestino) {
         this.ibanDestino = ibanDestino;
     }
 
